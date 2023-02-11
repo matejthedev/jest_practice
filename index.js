@@ -7,8 +7,13 @@ const add = (a, b) => {
   return a + b;
 };
 
-const toUpperReverse = (str) => str.toUpperCase().split("").reverse().join("");
-
+const toUpperReverse = (str) => {
+  try {
+    str.toUpperCase().split("").reverse().join("");
+  } catch (err) {
+    throw new Error("Something went wrong!");
+  }
+};
 module.exports = {
   add,
   toUpperReverse,

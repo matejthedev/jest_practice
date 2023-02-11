@@ -40,14 +40,10 @@ describe("toUpperReverse", () => {
   });
 
   it("throws an error when the argument is null", () => {
-    expect(() => toUpperReverse(null)).toThrow(
-      "Cannot read property 'toUpperCase' of null"
-    );
+    expect(() => toUpperReverse(null)).toThrow("Something went wrong!");
   });
 
   it("throws an error when the argument is undefined", () => {
-    expect(() => toUpperReverse(undefined)).toThrow(
-      "Cannot read property 'toUpperCase' of undefined"
-    );
+    expect(() => toUpperReverse(undefined)).toThrow("Something went wrong!");
   });
 });
