@@ -1,5 +1,4 @@
 // const add = (a, b) => a + b;
-
 const add = (a, b) => {
   if (a === null || a === undefined || b === null || b === undefined) {
     throw new Error("Both arguments must be provided");
@@ -9,7 +8,7 @@ const add = (a, b) => {
 
 const toUpperReverse = (str) => {
   try {
-    str.toUpperCase().split("").reverse().join("");
+    return str.toUpperCase().split("").reverse().join("");
   } catch (err) {
     throw new Error("Something went wrong!");
   }
