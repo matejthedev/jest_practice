@@ -8,7 +8,7 @@ const add = (a, b) => {
 
 const toUpperReverse = (str) => {
   try {
-    str.toUpperCase().split("").reverse().join("");
+    return str.toUpperCase().split("").reverse().join("");
   } catch (err) {
     throw new Error("Something went wrong!");
   }
