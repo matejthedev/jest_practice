@@ -1,4 +1,4 @@
-const { add, toUpperReverse } = require("./index.js");
+const { add, toUpperReverse } = require("../index.js");
 
 describe("add", () => {
   it("adds two numbers", () => {
